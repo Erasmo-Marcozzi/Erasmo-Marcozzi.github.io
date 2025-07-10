@@ -2,7 +2,7 @@ h5, h6, h3, h4 { padding:0; margin:0; font-family: "Consolas";}
 h5, h6 {color: #252525;}
 h1, h2 {font-family: 'Arial';}
 .g{color: #252525;}
-body {background-color: #FFF5EE; overflow-y: hidden;font-size: calc(2.04vmin)}
+body {background-color: #DCDCDC;overflow-x: hidden; overflow-y: hidden;font-size: calc(2.04vmin)}
 
 
 .lab {
@@ -32,7 +32,7 @@ details > summary::-webkit-details-marker {
   top: 0;
 }
 
-.select {background-color: #FFF5EE}
+.select {background-color: #DCDCDC}
 
 .urg{
 height: 6.5vh;
