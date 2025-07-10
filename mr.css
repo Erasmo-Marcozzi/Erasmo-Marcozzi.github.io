@@ -2,20 +2,20 @@ h5, h6, h3, h4 { padding:0; margin:0; font-family: "Consolas";}
 h1, h2 {font-family: 'Arial';}
 .l{color: #d8d8d8;}
 .d{color: #f8f8f8;}
-body {background-color: #222222;overflow-x: hidden;}
-.lab {border-bottom: 50px solid #660000;
-border-right: 60px solid transparent;
+body {background-color: #222222;overflow-x: hidden;
+overflow-y: hidden; font-size: calc(2.04vmin)}
+
+.lab {position:absolute;
+border-bottom:6.5vh solid #660000;
+border-right: 4vw solid transparent;
 height: 0px;
-width: 400px;
+width: 28vw;
 }
-.par {height: 100px; width: 600px; transform: skew(25deg);
+.par {height: 13vh; width: 42vw; transform: skew(25deg);
 	background: #660000;}
-.rec {height: 50px; width: 20px;
+.rec {height: 6.5vh; width: 1.5vw;
 	background: #660000;}
-.square {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
+
 }
 details > summary {
   list-style: none;
@@ -24,27 +24,27 @@ details > summary::-webkit-details-marker {
   display: none;
 }
 .vl {
-  border-left: 1px solid #f8f8f8;
-  height: 775px;
+  border-left: 0.07vw solid #f8f8f8;
+  height: 100vh;
   position: absolute;
   left: 35%;
-  margin-left: -3px;
+  margin-left: 0.2vw;
   top: 0;
 }
 
 .select {background-color: #222222; color: #f8f8f8;}
 
 .urg{
-height: 50px;
-width: 5px;
+height: 6.5vh;
+width: 0.35vw;
 transform: skew(50deg);
   background-color: #FFD700;}
 
 .tab{
-height: 80px;
-width: 300px;
-border-top: 1px solid #f8f8f8;
-border-left: 1px solid #f8f8f8;
+height: 10vh;
+width: 21vw;
+border-top: 0.15vh solid #f8f8f8;
+border-left: 0.07vw solid #f8f8f8;
 border-right: none;
 border-bottom:none;
 position:absolute;
@@ -52,10 +52,10 @@ right:0px;
 bottom:0px;
 background-color:transparent}
 
-.sep{height:80px;
-border-left: 1px solid #f8f8f8;
+.sep{height:10vh;
+border-left: 0.07vw solid #f8f8f8;
 position:absolute;
 bottom:0px;
 background-color:transparent}
 
-.tablabels{position:absolute;bottom:40px;text-align:center;transform: translate(+50%, +120%);color: #f8f8f8;}
+.tablabels{position:absolute;bottom:5vh;text-align:center;transform: translate(+50%, +120%);color: #f8f8f8;}

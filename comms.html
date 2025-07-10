@@ -6,46 +6,73 @@
 <link rel="stylesheet" href="ub.css">
 
 <h2 class="d" >COMMS DISPLAY</h2>
-<h3 class ="d" style ="position: relative; left: 20px; bottom: 12px">2 UNREAD MESSAGES</h3>
+<h3 class ="d" style ="position: absolute; left: 2vw; top: 7vh">2 UNREAD MESSAGES</h3>
 
 
 </head>
 
 <body>
 
+<select class = "select" id="themeSelector" style="font-family: 'Consolas'; position: absolute; top: 96.9%">
+  <option value="ub">Union Blue</option>
+  <option value="ha">Military HA</option>
+  <option value="hg">Horus Green</option>
+  <option value="mr">Merc Red</option>
+</select>
+
+<script>
+
+const linkElement = document.createElement("link");
+linkElement.rel = 'stylesheet';
+linkElement.type = 'text/css';
+
+document.addEventListener("DOMContentLoaded", () => {
+  const x = window.localStorage.getItem("theme");
+  linkElement.href = `${x}.css`;
+  document.head.appendChild(linkElement);
+
+  const themeSelector = document.getElementById("themeSelector");
+  themeSelector.value = x;
+ 
+window.localStorage.setItem("theme", x);
+});
+
+</script>
+
+
 <div class="vl" style="position:absolute; left:37%"></div>
 
 <!-- Don't touch anything above this except the number of unreads -->
 
-    <div class="lab", style ="position: absolute; top:11.5%; left: 1.3%;">
+    <div class="lab", style ="position: absolute; top:11.5vh; left: 1.3vw;">
     <details name = "email"><summary>
-    <h4 class = "d" style ="position: relative; left: 10px; top: 6px">
-    
+    <h4 class = "d" style ="position: relative; left: 2.5%; top: 0.8vh">
+
     From: R.R. Resnick // Oldman
-    
-    </h4><h5 class="l" style ="position: relative; left: 14px; top: 8px;">
-    
+
+    </h4><h5 class="l" style ="position: relative; left: 3.5%; top: 1.1vh;">
+
     Subject: Job for you
-    
+
     </h5>
-    
-    <h6 class="l" style ="position: relative; left: 385px; bottom: -2px;">
-    
+
+    <h6 class="l" style ="position: relative; left: 95%; top:0.3vh;">
+
     04/11/5031
-    
+
     </h6>
     </summary>
-    
-    <div style = "position: absolute; left: 135%; top: -70.0px; nowrap;", name = 'email'><nobr>
-    
-    
+
+    <div style = "position: absolute; left: 135%; top: -9vh; nowrap;", name = 'email'><nobr>
+
+
     <h2 class ="d" style="font-family: 'Consolas';">Job for you</h2>
-    
-    <div class = "par", style = "position: relative; left: 470px; bottom: 7px">
+
+    <div class = "par", style = "position: relative; left: 90%; bottom: 0.5%">
     </div>
-    
-    <h3 class ="l" style="font-family: 'Consolas'; position: relative; left: 500px; bottom: 100px">
-    
+
+    <h3 class ="l" style="font-family: 'Consolas'; position: relative; left: 95%; bottom: 12vh">
+
     From: R.R. Resnick
     <br/>
     Callsign: VAMC Oldman
@@ -53,10 +80,10 @@
     Tag: TYM-23081
     <br/>
     Date: 04/11/5031
-    
+
     </h3>
-    
-    <h4 class ="d" style="position: relative; left: 20px; bottom: 195px">
+
+    <h4 class ="d" style="position: relative; left: 4%; bottom: 25vh">
     
      <p>Hello,</p><p, style = 'position:relative; top:12px;'>
      This is Robert. There's something that's been</br> bothering me and I think it could
@@ -64,50 +91,50 @@
      you're done copying it to safe storage.</p>
      <p, style = 'position:relative; top:12px;'>I'll see you soon.</p>
      
-    
-    
+
+
     </h4>
-    
-    
+
+
     </nobr>
     </div>
     </details>
-    
+
     </div>
     
 <div class="rec", style = "position:absolute;  
               top:11.5%; left: -0.6%;"></div>
 
-    
-    <div class="lab", style ="position: absolute; top:19.5%; left: 1.3%;">
+
+    <div class="lab", style ="position: absolute; top:19.5vh; left: 1.3vw;">
     <details name = "email"><summary>
-    <h4 class = "d" style ="position: relative; left: 10px; top: 6px">
-    
+    <h4 class = "d" style ="position: relative; left: 2.5%; top: 0.8vh">
+
     From: Elizabeth Ellsey // Spring
-    
-    </h4><h5 class="l" style ="position: relative; left: 14px; top: 8px;">
-    
+
+    </h4><h5 class="l" style ="position: relative; left: 3.5%; top: 1.1vh;">
+
     Subject: We need to talk
-    
+
     </h5>
-    
-    <h6 class="l" style ="position: relative; left: 385px; bottom: -2px;">
-    
+
+    <h6 class="l" style ="position: relative; left: 95%; top:0.3vh;">
+
     03/11/5031
-    
+
     </h6>
     </summary>
-    
-    <div style = "position: absolute; left: 135%; top: -132px; nowrap;", name = 'email'><nobr>
-    
-    
+
+    <div style = "position: absolute; left: 135%; top: -16.97vh; nowrap;", name = 'email'><nobr>
+
+
     <h2 class ="d" style="font-family: 'Consolas';">We need to talk</h2>
-    
-    <div class = "par", style = "position: relative; left: 470px; bottom: 7px">
+
+    <div class = "par", style = "position: relative; left: 90%; bottom: 0.5%">
     </div>
-    
-    <h3 class ="l" style="font-family: 'Consolas'; position: relative; left: 500px; bottom: 100px">
-    
+
+    <h3 class ="l" style="font-family: 'Consolas'; position: relative; left: 95%; bottom: 12vh">
+
     From: Elizabeth Ellsey
     <br/>
     Callsign: SMA Spring
@@ -115,25 +142,25 @@
     Tag: SRN-00987
     <br/>
     Date: 03/11/5031
-    
+
     </h3>
-    
-    <h4 class ="d" style="position: relative; left: 20px; bottom: 195px">
+
+    <h4 class ="d" style="position: relative; left: 4%; bottom: 25vh">
     
     <p>Hey,</p><p, style = 'position:relative; top:12px;'>I have
      something I think you might be <br/> interested in. I'll be
      at Buck's the entire day. </p><p, style = 'position:relative; top:12px;'>
      Cheers,</p><p, style = 'position:relative; top:12px;'>Elizabeth
      
-    
-    
+
+
     </h4>
-    
-    
+
+
     </nobr>
     </div>
     </details>
-    
+
     </div>
     
 <div class="rec", style = "position:absolute;  
@@ -143,35 +170,25 @@
 
 <div class="tab"></div>
 
-<div class="sep" style="right:150px"></div>
+<div class="sep" style="right:10.5vw"></div>
 
-<h2 class="tablabels" style="right:75px"><a href="wikipedia.org", style="color:inherit"> CLOCKS </a></h2>
+<h2 class="tablabels" style="right:5.25vw"><a href="wikipedia.org", style="color:inherit"> CLOCKS </a></h2>
 
-<h2 class="tablabels" style="right:225px"> <a href="url", style="color:inherit"> MISSIONS </a> </h2>
-<h2 class="tablabels" style="right:375px"> COMMS </h2>
+<h2 class="tablabels" style="right:15.75vw"> <a href="url", style="color:inherit"> MISSIONS </a> </h2>
+<h2 class="tablabels" style="right:26.25vw"> COMMS </h2>
 
 
-
-<select class = "select" id="themeSelector" style="font-family: 'Consolas'; position: absolute; top: 750px">
-  <option value="ub">Union Blue</option>
-  <option value="ha">Military HA</option>
-  <option value="hg">Horus Green</option>
-  <option value="mr">Merc Red</option>
-</select>
 
 <script>
-
-const themeSelector = document.getElementById('themeSelector');
-const linkElement = document.createElement('link');
 linkElement.rel = 'stylesheet';
 linkElement.type = 'text/css';
 
-themeSelector.addEventListener('change', () => {
+themeSelector.addEventListener("change", () => {
   const selectedTheme = themeSelector.value;
   linkElement.href = `${selectedTheme}.css`;
   document.head.appendChild(linkElement);
 
-localStorage.setElement('theme', "selectedTheme");
+window.localStorage.setItem("theme", selectedTheme);
 });
 
 </script>

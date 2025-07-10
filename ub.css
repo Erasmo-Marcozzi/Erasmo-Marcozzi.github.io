@@ -1,51 +1,56 @@
 h5, h6, h3, h4 { padding:0; margin:0; font-family: "Consolas";}
+
 h1, h2 {font-family: 'Arial';}
+
 .l{color: #353535;}
+
 .d{color: #000000;}
-body {background-color: #F9F6EE;overflow-x: hidden;
-overflow-y: hidden}
-.lab {border-bottom: 50px solid #4AA2BD;
-border-right: 60px solid transparent;
+
+body {background-color: #F9F6EE;
+overflow-y: hidden; font-size: calc(2.04vmin); overflow-x:hidden}
+
+.lab {position:absolute;
+border-bottom:6.5vh solid #4AA2BD;
+border-right: 4vw solid transparent;
 height: 0px;
-width: 400px;
+width: 28vw;
 }
-.par {height: 100px; width: 600px; transform: skew(25deg);
+
+.par {height: 13vh; width: 42vw; transform: skew(25deg);
 	background: #4AA2BD;}
-.rec {height: 50px; width: 20px;
+
+.rec {height: 6.5vh; width: 1.5vw;
 	background: #4AA2BD;}
-.square {
-  height: 50px;
-  width: 50px;
-  background-color: #555;
-}
+
 details > summary {
   list-style: none;
 }
 details > summary::-webkit-details-marker {
   display: none;
 }
+
 .vl {
-  border-left: 1px solid black;
-  height: 775px;
+  border-left: 0.07vw solid black;
+  height: 100vh;
   position: absolute;
   left: 35%;
-  margin-left: -3px;
+  margin-left: 0.2vw;
   top: 0;
 }
 
 .select {background-color: #F9F6EE}
 
 .urg{
-height: 50px;
-width: 5px;
+height: 6.5vh;
+width: 0.35vw;
 transform: skew(50deg);
   background-color: #C40234;}
 
 .tab{
-height: 80px;
-width: 300px;
-border-top: 1px solid black;
-border-left: 1px solid black;
+height: 10vh;
+width: 21vw;
+border-top: 0.15vh solid black;
+border-left: 0.07vw solid black;
 border-right: none;
 border-bottom:none;
 position:absolute;
@@ -53,10 +58,10 @@ right:0px;
 bottom:0px;
 background-color:transparent}
 
-.sep{height:80px;
-border-left: 1px solid black;
+.sep{height:10vh;
+border-left: 0.07vw solid black;
 position:absolute;
 bottom:0px;
 background-color:transparent}
 
-.tablabels{position:absolute;bottom:40px;text-align:center;transform: translate(+50%, +120%);}
+.tablabels{position:absolute;bottom:5vh;text-align:center;transform: translate(+50%, +120%);}
