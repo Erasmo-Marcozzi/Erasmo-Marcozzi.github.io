@@ -27,6 +27,7 @@ linkElement.rel = 'stylesheet';
 linkElement.type = 'text/css';
 
 document.addEventListener("DOMContentLoaded", () => {
+if (window.localStorage.getItem("ider") !== null) {window.location.href = 'comms.html'}
 const txt = `WELCOME, PILOT.`;
 const outputDiv = document.getElementById('typer');
 
@@ -105,7 +106,7 @@ const outputDiv4 = document.getElementById('typer4');
     window.location.href = 'https://erasmo-marcozzi.github.io/comms';
 }}
 
-,500);
+,250);
 
 const id = document.getElementById("id");
 window.localStorage.setItem("ider", id.value);
