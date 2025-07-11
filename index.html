@@ -101,7 +101,9 @@ const outputDiv4 = document.getElementById('typer4');
     outputDiv4.innerHTML += txt4.charAt(i);
     i++;
     if (i === txt4.length) {
-    clearInterval(timesId);}}
+    clearInterval(timesId);
+    window.location.href = 'https://erasmo-marcozzi.github.io/comms';
+}}
 
 ,500);
 
@@ -111,11 +113,6 @@ window.localStorage.setItem("ider", id.value);
 });
 
 </script>
-
-
-
-
-
 
 <div class="vl" style="position:absolute; left:37%"></div>
 
