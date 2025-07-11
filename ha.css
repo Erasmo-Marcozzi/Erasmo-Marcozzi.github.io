@@ -59,3 +59,5 @@ bottom:0px;
 background-color:transparent}
 
 .tablabels{position:absolute;bottom:5vh;text-align:center;transform: translate(+50%, +120%);}
+
+input{background-color: #f6f6f6; font-family:'Consolas'; color:#000000}

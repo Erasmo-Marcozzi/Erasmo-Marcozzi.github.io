@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<link rel="stylesheet" href="ub.css">
+
+<h2 class="d">LOGIN</h2>
+<h3 class ="d" style ="position: absolute; left: 18.5vw; top: 7vh; transform: translatex(-50%); text-align: center"><div id="typer"></div></h3>
+<h3 class ="d" style ="position: absolute; left: 18.5vw; top: 10vh; transform: translatex(-50%); text-align: center"><div id="typer2"></div></h3>
+
+
+</head>
+
+<body>
+
+<select class = "select" id="themeSelector" style="font-family: 'Consolas'; position: absolute; top: 96.9%; width: 8vw; height: 3vh; font-size: calc(80%)">
+  <option value="ub">Union Blue</option>
+  <option value="ha">Military HA</option>
+  <option value="hg">Horus Green</option>
+  <option value="mr">Merc Red</option>
+</select>
+
+<script>
+const linkElement = document.createElement("link");
+linkElement.rel = 'stylesheet';
+linkElement.type = 'text/css';
+
+document.addEventListener("DOMContentLoaded", () => {
+const txt = `WELCOME, PILOT.`;
+const outputDiv = document.getElementById('typer');
+
+  let i = 0;
+  const timerId = setInterval(() => {
+    outputDiv.innerHTML += txt.charAt(i);
+    i++;
+    if (i === txt.length) {
+    clearInterval(timerId);}
+    if (i === txt.length) {
+    const txt2 = `PLEASE ENTER YOUR IDENTIFIER AND PASSKEY.`;
+    const outputDiv2 = document.getElementById('typer2');
+
+  let q = 0;
+  const timedId = setInterval(() => {
+    outputDiv2.innerHTML += txt2.charAt(q);
+    q++;
+    if (q === txt2.length) {
+    clearInterval(timedId);}
+    },50);}},50);
+
+  const x = window.localStorage.getItem("theme");
+  linkElement.href = `${x}.css`;
+  document.head.appendChild(linkElement);
+
+  const themeSelector = document.getElementById("themeSelector");
+  themeSelector.value = x;
+ 
+window.localStorage.setItem("theme", x);
+});
+
+</script>
+
+
+<form style="position:absolute; left: 18.5vw; top:15vh; transform:translatex(-50%);">
+
+  <h4 class ="l">
+
+<label for="fname">ID:</label>
+
+  <input type="text" id="id" name="fname">
+
+</h4><br/>
+
+    <h4 class ="l">
+
+<label for="lname" style="position:relative; right: 3vw">Passkey:</label>
+
+
+  <input type="text" id="lname" name="lname" style="position:relative; right: 3vw"></h4><br/>
+
+
+  <input type="button" id = "yori" value="Access" style="position:relative; left:6vw;">
+
+</form>
+
+<h2 class ="d" style ="position: absolute; left: 18.5vw; top: 30vh; transform: translatex(-50%); text-align: center"><div id="typer3"></div></h3>
+<h2 class ="d" style ="position: absolute; left: 18.5vw; top: 32vh; transform: translatex(-50%); text-align: center"><div id="typer4"></div></h3>
+
+<script>
+
+yori.addEventListener("click", () => {
+const txt3 = "ACCESSING SYSTEM"
+const outputDiv3 = document.getElementById('typer3');
+outputDiv3.innerHTML += txt3
+
+const txt4 = ".........."
+const outputDiv4 = document.getElementById('typer4');
+
+  let i = 0;
+  const timesId = setInterval(() => {
+    outputDiv4.innerHTML += txt4.charAt(i);
+    i++;
+    if (i === txt4.length) {
+    clearInterval(timesId);}}
+
+,500);
+
+const id = document.getElementById("id");
+window.localStorage.setItem("ider", id.value);
+
+});
+
+</script>
+
+
+
+
+
+
+<div class="vl" style="position:absolute; left:37%"></div>
+
+<!-- Don't touch anything above this except the number of unreads -->
+
+<!-- Don't touch anything below this except if you wanna add a new theme -->
+
+<div class="tab" style="width:31.5vw"></div>
+
+<div class="sep" style="right:10.5vw"></div>
+
+<div class="sep" style="right:21vw"></div>
+
+
+<h2 class="tablabels" style="right:5.25vw"> CLOCKS </h2>
+
+<h2 class="tablabels" style="right:15.75vw"> MISSIONS  </h2>
+
+<h2 class="tablabels" style="right:26.25vw"> COMMS </h2>
+
+
+
+<script>
+linkElement.rel = 'stylesheet';
+linkElement.type = 'text/css';
+
+themeSelector.addEventListener("change", () => {
+  const selectedTheme = themeSelector.value;
+  linkElement.href = `${selectedTheme}.css`;
+  document.head.appendChild(linkElement);
+
+window.localStorage.setItem("theme", selectedTheme);
+});
+
+</script>
+
+</body>
+</html>

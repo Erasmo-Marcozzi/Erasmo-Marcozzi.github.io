@@ -5,20 +5,7 @@
 
 <link rel="stylesheet" href="ub.css">
 
-<h2 class="d" >COMMS DISPLAY</h2>
-<h3 class ="d" style ="position: absolute; left: 2vw; top: 7vh">2 UNREAD MESSAGES</h3>
-
-
-</head>
-
-<body>
-
-<select class = "select" id="themeSelector" style="font-family: 'Consolas'; position: absolute; top: 96.9%; width: 8vw; height: 3vh; font-size: calc(80%)">
-  <option value="ub">Union Blue</option>
-  <option value="ha">Military HA</option>
-  <option value="hg">Horus Green</option>
-  <option value="mr">Merc Red</option>
-</select>
+<h2 class="d" id="name">COMMS DISPLAY FOR </h2>
 
 <script>
 
@@ -33,11 +20,33 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const themeSelector = document.getElementById("themeSelector");
   themeSelector.value = x;
+
+  const ider = window.localStorage.getItem("ider");
+  const name = document.getElementById("name");
+
+  if (ider.length > 13) {name.innerHTML += ider.slice(0,11); name.innerHTML += "...";}
+  else{name.innerHTML += ider;};
+
+  
  
 window.localStorage.setItem("theme", x);
 });
 
 </script>
+
+<h3 class ="d" style ="position: absolute; left: 2vw; top: 7vh">2 UNREAD MESSAGES</h3>
+
+
+</head>
+
+<body>
+
+<select class = "select" id="themeSelector" style="font-family: 'Consolas'; position: absolute; top: 96.9%; width: 8vw; height: 3vh; font-size: calc(80%)">
+  <option value="ub">Union Blue</option>
+  <option value="ha">Military HA</option>
+  <option value="hg">Horus Green</option>
+  <option value="mr">Merc Red</option>
+</select>
 
 
 <div class="vl" style="position:absolute; left:37%"></div>
